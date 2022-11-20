@@ -96,71 +96,58 @@
         <div class="container-fluid table table-success table-striped">
             <div class="row" style="width: 100%; padding: 0; margin: 0;">
                 <div id="content">
-                    <h1 style="text-align: center; color: blue">Chỉnh sửa Dịch Vụ</h1>
-                    <form id="form"
-                          method="post" novalidate="novalidate">
-
+                    <h1 style="text-align: center; color: blue">Chỉnh sửa </h1>
+                    <form id="form" method="post" novalidate="novalidate">
                         <fieldset style="width: 50%; margin-left: 25%">
                             <table class="table table-striped" style="text-align: left">
-                                <input type="hidden" />
+                                <input type="hidden"/>
                                 <tr>
                                     <td>Tên</td>
-                                    <td><input type="text" ></td>
+                                    <td><input type="text"></td>
                                 </tr>
                                 <tr>
-                                    <td>Loại dịch vụ</td>
-                                    <td><select  id="facilityTypeSelect" onchange="changeType(this.value)">
-                                        <option value="">--Chọn Loại--</option>
-                                        <option value="">Villa</option>
-                                        <option value="">House</option>
-                                        <option value="">Room</option>
+                                    <td>Ngay sinh</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Gio tinh</td>
+                                    <td><select id="facilityTypeSelect" onchange="changeType(this.value)">
+                                        <option value="">Nam</option>
+                                        <option value="">Nu</option>
+                                        <option value="">Khac</option>
                                     </select></td>
                                 </tr>
                                 <tr>
-                                    <td>Diện tích</td>
-                                    <td><input type="text" ></td>
+                                    <td>CMND</td>
+                                    <td><input type="text"></td>
                                 </tr>
                                 <tr>
-                                    <td>Giá</td>
-                                    <td><input type="text" ></td>
+                                    <td>SDT</td>
+                                    <td><input type="text"></td>
                                 </tr>
                                 <tr>
-                                    <td>Số người tối đa</td>
-                                    <td><input type="text" ></td>
+                                    <td>Email</td>
+                                    <td><input type="text"></td>
+                                </tr>    <tr>
+                                    <td>Dia chi</td>
+                                    <td><input type="text"></td>
                                 </tr>
                                 <tr>
-                                    <td>Kiểu thuê</td>
+                                    <td>Loai khach</td>
                                     <td>
-                                        <select >
+                                        <select>
                                             <option value="">--Chọn Loại--</option>
-                                            <option value="">Villa</option>
-                                            <option value="">Villa</option>
-                                            <option value="">Villa</option>
-                                            <option value="">Villa</option>
+                                            <option value="">Diamond</option>
+                                            <option value="">Platinium</option>
+                                            <option value="">Gold</option>
+                                            <option value="">Silver</option>
+                                            <option value="">Member</option>
                                         </select>
                                     </td>
                                 </tr>
-                                <tr class="villa house" >
-                                    <td>Tiêu chuẩn phòng</td>
-                                    <td><input type="text" ></td>
-                                </tr>
-                                <tr class="villa house">
-                                    <td>Mô tả</td>
-                                    <td><input type="text"  ></td>
-                                </tr>
-                                <tr class="villa">
-                                    <td>Diện tích hồ bơi</td>
-                                    <td><input type="text"  ></td>
-                                </tr>
-                                <tr class="villa house">
-                                    <td>Số tầng</td>
-                                    <td><input type="text"  ></td>
-                                </tr>
-                                <tr class="room">
-                                    <td>Dịch vụ miễn phí</td>
-                                    <td><input type="text" ></td>
-                                </tr>
                                 <tr>
+                                    <td></td>
+
                                     <td>
                                         <button type="submit" class="btn btn-primary">Lưu thông tin</button>
                                     </td>
@@ -173,8 +160,6 @@
         </div>
 
     </div>
-
-
 
 
 </div>
