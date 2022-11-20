@@ -49,8 +49,6 @@ table {
 }
 
 
-
-
 body {
     width: 100vw;
     height: fit-content;
@@ -59,8 +57,14 @@ body {
 }
 
 .header {
-    height: 80px;
+    height: 50px;
     padding: 12px 0;
+    display: flex;
+    width: 100vw;
+    background-color: #eee3cb;
+    z-index: 10;
+    position: fixed;
+    top: 0;
 }
 
 .header__logo {
@@ -75,9 +79,14 @@ body {
     width: 1160px;
 }
 
+.imgLogo {
+    height: 50px;
+    width: auto;
+}
+
 .navbar {
     /*background-color: #046056;*/
-    height: 70px;
+    height: 50px;
     width: 100%;
     padding: 0;
     padding-left: 140px;
@@ -300,27 +309,33 @@ span {
     width: auto;
 }
 
-.header {
-    display: flex;
-    height: 50px;
-    width: 100vw;
-    background-color: #eee3cb;
-    z-index: 10;
-    position: fixed;
-    top: 0;
-}
-.slider{
+
+.slider {
     margin-top: 124px;
 }
-.myNavbar{
+
+.myNavbar {
     width: auto;
     height: 43px;
     font-size: 20px;
 }
-tr td input, tr td select{
+
+tr td input, tr td select {
     width: 98% !important;
 }
-legend{
+
+legend {
     text-align: center;
     font-size: 38px;
+    color: blue;
+}
+
+.section {
+    margin-top: 70px;
+}
+.my-fieldset{
+    width: 100%; margin-left: 0%
+}
+.my-td-form{
+    width: 20%;
 }

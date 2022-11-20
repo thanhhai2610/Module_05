@@ -9,12 +9,11 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
 
-<!--    <link rel="stylesheet" href="../css/index.css">-->
+    <link rel="stylesheet" href="../until/css/index.css">
 
 </head>
+
 <body>
-
-
 <div class="container-fluid px-0 vh-100">
 
     <div class="header bg-light ">
@@ -22,8 +21,7 @@
         <nav class=" navbar navbar-expand-lg bg-light ">
             <div class="container-fluid">
                 <a class="navbar-brand fs-3" href="/#">
-                    <img style="height: 60px; width: auto;"
-                         src="https://furamavietnam.com/wp-content/uploads/2018/08/logo.png" alt=""></a>
+                    <img class="imgLogo" src="https://furamavietnam.com/wp-content/uploads/2018/08/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                         aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -97,83 +95,156 @@
         </nav>
     </div>
 
-    <div style="margin-top: 55px">
-        <table class="table table-success table-striped">
-            <tr>
-                <td>STT</td>
-                <td>Tên dịch vụ</td>
-                <td>Diện tích</td>
-                <td>Chi phí thuê</td>
-                <td>Số người tối đa</td>
-                <td>Kiểu thuê</td>
-                <td>Loại dịch vụ</td>
-                <td>Sửa</td>
-                <td>Xoá</td>
-                <td>Xem</td>
-            </tr>
+    <div class="row mx-0 position-relative section" >
+        <div class="col-12 col-sm -4 col-md-2  px-0">
+            <div class="list-group min-vh-100 navbar-nav-scroll " style="border: 2px solid #7952b3; height: 100%">
+                <button type="button" class="list-group-item list-group-item-action " aria-current="true">
+                    The current button
+                </button>
+                <button type="button" class="list-group-item list-group-item-action">A second item</button>
+                <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+                <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item
+                </button>
+            </div>
+        </div>
 
-            <tr th:each="data, a : ${facilityDtoListPage}">
-                <td th:text="${a.count}"></td>
-                <td th:text="${data.name}"></td>
-                <td th:text="${data.area}"></td>
-                <td th:text="${data.cost}"></td>
-                <td th:text="${data.max_people}"></td>
-                <td th:text="${data.rentType.name}"></td>
-                <td th:text="${data.facilityType.name}"></td>
-                <td><a type="button" class="btn btn-warning"
-                       th:href="@{/facility/edit/__${data.getId()}__}">Sửa</a>
-                </td>
-                <td>
-                    <button type="button" th:data-id="${data.id}"
-                            th:data-name="${data.name}"
-                            onclick="showModalDeleteFacility(this.getAttribute('data-id'),
+        <div class="  col-12 col-sm-8 col-md-8 ">
+                <table class="table table-success table-striped">
+                    <legend >Danh sách dịch vụ cho thuê</legend>
+                    <tr>
+                        <td>STT</td>
+                        <td>Tên dịch vụ</td>
+                        <td>Diện tích</td>
+                        <td>Chi phí thuê</td>
+                        <td>Số người tối đa</td>
+                        <td>Kiểu thuê</td>
+                        <td>Loại dịch vụ</td>
+                        <td>Sửa</td>
+                        <td>Xoá</td>
+                        <td>Xem</td>
+                    </tr>
+
+                    <tr th:each="data, a : ${facilityDtoListPage}">
+                        <td th:text="${a.count}"></td>
+                        <td th:text="${data.name}"></td>
+                        <td th:text="${data.area}"></td>
+                        <td th:text="${data.cost}"></td>
+                        <td th:text="${data.max_people}"></td>
+                        <td th:text="${data.rentType.name}"></td>
+                        <td th:text="${data.facilityType.name}"></td>
+                        <td><a type="button" class="btn btn-warning"
+                               th:href="@{/facility/edit/__${data.getId()}__}">Sửa</a>
+                        </td>
+                        <td>
+                            <button type="button" th:data-id="${data.id}"
+                                    th:data-name="${data.name}"
+                                    onclick="showModalDeleteFacility(this.getAttribute('data-id'),
                                                      this.getAttribute('data-name'))"
-                            class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Xoá
-                    </button>
-                </td>
-                <td>
-                    <button type="button" class="btn btn-primary"
-                            th:attr="onclick=|showModalViewFacility('${data.id}','${data.name}',
+                                    class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Xoá
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary"
+                                    th:attr="onclick=|showModalViewFacility('${data.id}','${data.name}',
                     '${data.facilityType.id}' ,
                     '${data.area}','${data.cost}',
                      '${data.max_people}', '${data.rentType.id}', '${data.standardRoom}',
                       '${data.descriptionOtherConvenience}', '${data.poolArea}',
                       '${data.numberOfFloors}', '${data.facilityFree}' )|"
-                            data-bs-toggle="modal" data-bs-target="#modalView">Xem
-                    </button>
-                </td>
-            </tr>
-        </table>
-        <!--/*phân trang*/-->
-        <nav aria-label="..." class="justify-content-center d-flex ">
-            <ul class="pagination">
-                <li class="page-item"><a class="page-link"
-                                         th:href="@{'/facility'(page=${facilityDtoListPage.number - 1}, searchName=${searchName}, searchFacilityTypeList=${searchFacilityTypeList})}"
-                                         th:if="${facilityDtoListPage.hasPrevious()}"> Previous </a></li>
+                                    data-bs-toggle="modal" data-bs-target="#modalView">Xem
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+                <!--/*phân trang*/-->
+                <nav aria-label="..." class="justify-content-center d-flex ">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link"
+                                                 th:href="@{'/facility'(page=${facilityDtoListPage.number - 1}, searchName=${searchName}, searchFacilityTypeList=${searchFacilityTypeList})}"
+                                                 th:if="${facilityDtoListPage.hasPrevious()}"> Previous </a></li>
 
-                <li class="page-item"><a class="page-link"
-                                         th:href="@{'/facility'(page=${facilityDtoListPage.number - 1}, searchName=${searchName}, searchFacilityTypeList=${searchFacilityTypeList})}"
-                                         th:if="${facilityDtoListPage.hasPrevious()}"
-                                         th:text="${facilityDtoListPage.number}"></a></li>
+                        <li class="page-item"><a class="page-link"
+                                                 th:href="@{'/facility'(page=${facilityDtoListPage.number - 1}, searchName=${searchName}, searchFacilityTypeList=${searchFacilityTypeList})}"
+                                                 th:if="${facilityDtoListPage.hasPrevious()}"
+                                                 th:text="${facilityDtoListPage.number}"></a></li>
 
-                <li class="page-item active"><a class="page-link"
-                                                th:href="@{'/facility'(page=${facilityDtoListPage.number}, searchName=${searchName}, searchFacilityTypeList=${searchFacilityTypeList})}"
-                                                th:text="${facilityDtoListPage.number + 1}">
-                    <span class="sr-only">(Current page)</span></a></li>
+                        <li class="page-item active"><a class="page-link"
+                                                        th:href="@{'/facility'(page=${facilityDtoListPage.number}, searchName=${searchName}, searchFacilityTypeList=${searchFacilityTypeList})}"
+                                                        th:text="${facilityDtoListPage.number + 1}">
+                            <span class="sr-only">(Current page)</span></a></li>
 
-                <li class="page-item"><a class="page-link"
-                                         th:href="@{'/facility'(page=${facilityDtoListPage.number + 1}, searchName=${searchName}, searchFacilityTypeList=${searchFacilityTypeList})}"
-                                         th:if="${facilityDtoListPage.hasNext()}"
-                                         th:text="${facilityDtoListPage.number + 2}"></a></li>
+                        <li class="page-item"><a class="page-link"
+                                                 th:href="@{'/facility'(page=${facilityDtoListPage.number + 1}, searchName=${searchName}, searchFacilityTypeList=${searchFacilityTypeList})}"
+                                                 th:if="${facilityDtoListPage.hasNext()}"
+                                                 th:text="${facilityDtoListPage.number + 2}"></a></li>
 
-                <li class="page-item"><a class="page-link"
-                                         th:href="@{'/contract'(page=${facilityDtoListPage.number + 1}, searchName=${searchName}, searchFacilityTypeList=${searchFacilityTypeList})}"
-                                         th:if="${facilityDtoListPage.hasNext()}">Next</a></li>
-            </ul>
-        </nav>
+                        <li class="page-item"><a class="page-link"
+                                                 th:href="@{'/contract'(page=${facilityDtoListPage.number + 1}, searchName=${searchName}, searchFacilityTypeList=${searchFacilityTypeList})}"
+                                                 th:if="${facilityDtoListPage.hasNext()}">Next</a></li>
+                    </ul>
+                </nav>
+        </div>
+
+        <div class="col-12 col-sm -4 col-md-2  px-0">
+            <div class="list-group min-vh-100 navbar-nav-scroll " style="border: 2px solid #7952b3; height: 100%">
+                <button type="button" class="list-group-item list-group-item-action " aria-current="true">
+                    The current button
+                </button>
+                <button type="button" class="list-group-item list-group-item-action">A second item</button>
+                <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+                <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item
+                </button>
+            </div>
+        </div>
     </div>
-
-
+    <section class="footer d-flex justify-content-center mt-5">
+        <div class="wrapper container">
+            <div class="row h-100">
+                <div class="col-6 " style="padding-top: 5%;">
+                    <p class="fs-5 text-uppercase text-dark fw-bold">Our Brands</p>
+                    <div class="d-flex mt-4">/
+                        <img class="footer__brand-logo" src="../until/images/xclusive.png" alt="">
+                        <img class="footer__brand-logo" src="../until/images/fx.png" alt="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h3 class="fs-2 text-uppercase text-dark fw-bold mb-4"> Furama</h3>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="d-flex flex-column gap-2">
+                                <a href="#" class="text-dark fs-5">Our hotel</a>
+                                <a href="#" class="text-dark fs-5">Promotions</a>
+                                <a href="#" class="text-dark fs-5">Meetings</a>
+                                <a href="#" class="text-dark fs-5">Brand story</a>
+                                <a href="#" class="text-dark fs-5">Media center</a>
+                                <a href="#" class="text-dark fs-5">Corporate info</a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="d-flex flex-column gap-2">
+                                <a href="#" class="text-dark fs-5">Lifestyle blog</a>
+                                <a href="#" class="text-dark fs-5">Careers</a>
+                                <a href="#" class="text-dark fs-5">Contact us</a>
+                                <a href="#" class="text-dark fs-5">Notices</a>
+                                <a href="#" class="text-dark fs-5">EGifts</a>
+                                <a href="#" class="text-dark fs-5">Expore south-east asia </a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="d-flex flex-column gap-2">
+                                <a href="#" class="text-dark fs-5">Travel agents</a>
+                                <a href="#" class="text-dark fs-5">Sitemap</a>
+                                <a href="#" class="text-dark fs-5">Terms & Conditions</a>
+                                <a href="#" class="text-dark fs-5">Privacy policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 </div>
@@ -185,3 +256,6 @@
 
 </body>
 </html>
+
+
+

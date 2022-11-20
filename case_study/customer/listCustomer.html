@@ -9,21 +9,20 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
 
-<!--    <link rel="stylesheet" href="../css/index.css">-->
+        <link rel="stylesheet" href="../until/css/index.css">
 
 </head>
-<body>
 
+<body>
 
 <div class="container-fluid px-0 vh-100">
 
     <div class="header bg-light ">
         <!--/*navbar*/-->
-        <nav class=" navbar navbar-expand-lg bg-light ">
+        <nav class=" navbar navbar-expand-lg bg-light  ">
             <div class="container-fluid">
                 <a class="navbar-brand fs-3" href="/#">
-                    <img style="height: 60px; width: auto;"
-                         src="https://furamavietnam.com/wp-content/uploads/2018/08/logo.png" alt=""></a>
+                    <img class="imgLogo" src="https://furamavietnam.com/wp-content/uploads/2018/08/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                         aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -97,86 +96,156 @@
         </nav>
     </div>
 
-    <div style="margin-top: 55px">
+    <div class="row mx-0 position-relative section">
+        <div class="col-12 col-sm -4 col-md-2  px-0">
+            <div class="list-group min-vh-100 navbar-nav-scroll " style="border: 2px solid #7952b3; height: 100%">
+                <button type="button" class="list-group-item list-group-item-action " aria-current="true">
+                    The current button
+                </button>
+                <button type="button" class="list-group-item list-group-item-action">A second item</button>
+                <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+                <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item
+                </button>
+            </div>
+        </div>
 
-        <table class="table table-success table-striped">
-            <tr>
-                <td>STT</td>
-                <td>Name</td>
-                <td>Date Birth</td>
-                <td>Gender</td>
-                <td>Id Card</td>
-                <td>Phone</td>
-                <td>Email</td>
-                <td>Address</td>
-                <td>Customer Type</td>
-                <td>Edit</td>
-                <td>Delete</td>
-            </tr>
-            <tr th:each="data, a : ${customerDtoListPage}">
-                <td th:text="${a.count}"></td>
-                <td th:text="${data.name}"></td>
-                <td th:text="${data.dateOfBirth}"></td>
+        <div class="  col-12 col-sm-8 col-md-8 ">
+            <table class="table table-success table-striped">
+                <legend>Danh sách khách hàng</legend>
+                <tr>
+                    <td>STT</td>
+                    <td>Name</td>
+                    <td>Date Birth</td>
+                    <td>Gender</td>
+                    <td>Id Card</td>
+                    <td>Phone</td>
+                    <td>Email</td>
+                    <td>Address</td>
+                    <td>Customer Type</td>
+                    <td>Edit</td>
+                    <td>Delete</td>
+                </tr>
+                <tr th:each="data, a : ${customerDtoListPage}">
+                    <td th:text="${a.count}"></td>
+                    <td th:text="${data.name}"></td>
+                    <td th:text="${data.dateOfBirth}"></td>
 
-                <td><select>
-                    <option value="">--Chọn Loại--</option>
-                    <option value="">Nam</option>
-                    <option value="">Nữ</option>
-                    <option value="">Khác</option>
-                </select></td>
+                    <td><select>
+                        <option value="">--Chọn Loại--</option>
+                        <option value="">Nam</option>
+                        <option value="">Nữ</option>
+                        <option value="">Khác</option>
+                    </select></td>
 
-                <td th:text="${data.idCard}"></td>
-                <td th:text="${data.phoneNumber}"></td>
-                <td th:text="${data.email}"></td>
-                <td th:text="${data.address}"></td>
-                <td th:text="${data.customerType.name}"></td>
-                <td>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-warning"
-                            th:attr="onclick=|showModalEditCustomer( '${data.id}','${data.name}', '${data.dateOfBirth}',
+                    <td th:text="${data.idCard}"></td>
+                    <td th:text="${data.phoneNumber}"></td>
+                    <td th:text="${data.email}"></td>
+                    <td th:text="${data.address}"></td>
+                    <td th:text="${data.customerType.name}"></td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-warning"
+                                th:attr="onclick=|showModalEditCustomer( '${data.id}','${data.name}', '${data.dateOfBirth}',
                      '${data.gender}', '${data.idCard}', '${data.phoneNumber}', '${data.email}', '${data.address}', '${data.customerType.id}')|"
-                            data-bs-toggle="modal" data-bs-target="#editInfoModal">
-                        Edit
-                    </button>
-                </td>
-                <td>
-                    <button type="button" th:data-id="${data.id}"
-                            th:data-name="${data.name}"
-                            onclick="showModalDeleteCustomer(this.getAttribute('data-id'),this.getAttribute('data-name'))"
-                            class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Delete
-                    </button>
-                </td>
-            </tr>
-        </table>
+                                data-bs-toggle="modal" data-bs-target="#editInfoModal">
+                            Edit
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" th:data-id="${data.id}"
+                                th:data-name="${data.name}"
+                                onclick="showModalDeleteCustomer(this.getAttribute('data-id'),this.getAttribute('data-name'))"
+                                class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Delete
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            <!--/*phân trang*/-->
+            <nav class="justify-content-center d-flex ">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link"
+                                             th:href="@{'/customer'(page=${customerDtoListPage.number - 1}, searchName=${searchName}, searchAddress=${searchAddress}, searchCustomerTypeList=${searchCustomerTypeList})}"
+                                             th:if="${customerDtoListPage.hasPrevious()}"> Previous </a></li>
 
-        <!--/*phân trang*/-->
-        <nav class="justify-content-center d-flex ">
-            <ul class="pagination">
-                <li class="page-item"><a class="page-link"
-                                         th:href="@{'/customer'(page=${customerDtoListPage.number - 1}, searchName=${searchName}, searchAddress=${searchAddress}, searchCustomerTypeList=${searchCustomerTypeList})}"
-                                         th:if="${customerDtoListPage.hasPrevious()}"> Previous </a></li>
+                    <li class="page-item active"><a class="page-link"
+                                                    th:href="@{'/customer'(page=${customerDtoListPage.number - 1}, searchName=${searchName},  searchAddress=${searchAddress}, searchCustomerTypeList=${searchCustomerTypeList})}"
+                                                    th:if="${customerDtoListPage.hasPrevious()}"
+                                                    th:text="${customerDtoListPage.number}"></a></li>
 
-                <li class="page-item active"><a class="page-link"
-                                                th:href="@{'/customer'(page=${customerDtoListPage.number - 1}, searchName=${searchName},  searchAddress=${searchAddress}, searchCustomerTypeList=${searchCustomerTypeList})}"
-                                                th:if="${customerDtoListPage.hasPrevious()}"
-                                                th:text="${customerDtoListPage.number}"></a></li>
+                    <li class="page-item"><a class="page-link"
+                                             th:href="@{'/customer'(page=${customerDtoListPage.number + 1}, searchName=${searchName},  searchAddress=${searchAddress}, searchCustomerTypeList=${searchCustomerTypeList})}"
+                                             th:if="${customerDtoListPage.hasNext()}"
+                                             th:text="${customerDtoListPage.number + 2}"></a></li>
 
-                <li class="page-item"><a class="page-link"
-                                         th:href="@{'/customer'(page=${customerDtoListPage.number + 1}, searchName=${searchName},  searchAddress=${searchAddress}, searchCustomerTypeList=${searchCustomerTypeList})}"
-                                         th:if="${customerDtoListPage.hasNext()}"
-                                         th:text="${customerDtoListPage.number + 2}"></a></li>
+                    <li class="page-item"><a class="page-link"
+                                             th:href="@{'/customer'(page=${customerDtoListPage.number + 1}, searchName=${searchName},  searchAddress=${searchAddress}, searchCustomerTypeList=${searchCustomerTypeList})}"
+                                             th:if="${customerDtoListPage.hasNext()}">Next</a></li>
+                </ul>
+            </nav>
+        </div>
 
-                <li class="page-item"><a class="page-link"
-                                         th:href="@{'/customer'(page=${customerDtoListPage.number + 1}, searchName=${searchName},  searchAddress=${searchAddress}, searchCustomerTypeList=${searchCustomerTypeList})}"
-                                         th:if="${customerDtoListPage.hasNext()}">Next</a></li>
-            </ul>
-        </nav>
+        <div class="col-12 col-sm -4 col-md-2  px-0">
+            <div class="list-group min-vh-100 navbar-nav-scroll " style="border: 2px solid #7952b3; height: 100%">
+                <button type="button" class="list-group-item list-group-item-action " aria-current="true">
+                    The current button
+                </button>
+                <button type="button" class="list-group-item list-group-item-action">A second item</button>
+                <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+                <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item
+                </button>
+            </div>
+        </div>
+
+        <section class="footer d-flex justify-content-center mt-5">
+            <div class="wrapper container">
+                <div class="row h-100">
+                    <div class="col-6 " style="padding-top: 5%;">
+                        <p class="fs-5 text-uppercase text-dark fw-bold">Our Brands</p>
+                        <div class="d-flex mt-4">/
+                            <img class="footer__brand-logo" src="../until/images/xclusive.png" alt="">
+                            <img class="footer__brand-logo" src="../until/images/fx.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="fs-2 text-uppercase text-dark fw-bold mb-4"> Furama</h3>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="d-flex flex-column gap-2">
+                                    <a href="#" class="text-dark fs-5">Our hotel</a>
+                                    <a href="#" class="text-dark fs-5">Promotions</a>
+                                    <a href="#" class="text-dark fs-5">Meetings</a>
+                                    <a href="#" class="text-dark fs-5">Brand story</a>
+                                    <a href="#" class="text-dark fs-5">Media center</a>
+                                    <a href="#" class="text-dark fs-5">Corporate info</a>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-flex flex-column gap-2">
+                                    <a href="#" class="text-dark fs-5">Lifestyle blog</a>
+                                    <a href="#" class="text-dark fs-5">Careers</a>
+                                    <a href="#" class="text-dark fs-5">Contact us</a>
+                                    <a href="#" class="text-dark fs-5">Notices</a>
+                                    <a href="#" class="text-dark fs-5">EGifts</a>
+                                    <a href="#" class="text-dark fs-5">Expore south-east asia </a>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="d-flex flex-column gap-2">
+                                    <a href="#" class="text-dark fs-5">Travel agents</a>
+                                    <a href="#" class="text-dark fs-5">Sitemap</a>
+                                    <a href="#" class="text-dark fs-5">Terms & Conditions</a>
+                                    <a href="#" class="text-dark fs-5">Privacy policy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </div>
-
-
-
-
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
