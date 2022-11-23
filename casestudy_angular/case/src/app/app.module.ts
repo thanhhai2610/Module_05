@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { FacilityComponent } from './facility/facility.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { NavComponent } from './nav/nav.component';
-import { EditFacilityComponent } from './edit-facility/edit-facility.component';
+import { FacilityComponent } from './facility/list-facility/facility.component';
+import { HeaderComponent } from './header_footer_nav/header/header.component';
+import { FooterComponent } from './header_footer_nav/footer/footer.component';
+import { NavComponent } from './header_footer_nav/nav/nav.component';
+import { EditFacilityComponent } from './facility/edit-facility/edit-facility.component';
+import { CreateFacilityComponent } from './facility/create-facility/create-facility.component';
+import { ListCustomerComponent } from './customer/list-customer/list-customer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { EditFacilityComponent } from './edit-facility/edit-facility.component';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    EditFacilityComponent
+    EditFacilityComponent,
+    CreateFacilityComponent,
+    ListCustomerComponent
   ],
   imports: [
     BrowserModule

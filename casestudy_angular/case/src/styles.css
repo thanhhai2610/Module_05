@@ -334,10 +334,19 @@ legend {
 .section {
   margin-top: 70px;
 }
-.my-fieldset{
-  width: 100%; margin-left: 0%
+
+.my-fieldset {
+  width: 100%;
+  margin-left: 0%
 }
-.my-td-form{
+
+.my-td-form {
   width: 20%;
+}
+
+.background1 {
+  background: url("/assets/images/BG2.jpg") center center /cover;
+  background-position: right bottom;
+  background-repeat: no-repeat;
 }
 
