@@ -1,4 +1,7 @@
+
+
 <div class="row mx-0 position-relative section">
+
   <div class="col-12 col-sm -4 col-md-2  px-0">
     <div class="list-group min-vh-100 navbar-nav-scroll " style="border: 2px solid #7952b3; height: 100%">
       <button type="button" class="list-group-item list-group-item-action " aria-current="true">
@@ -13,61 +16,120 @@
   </div>
 
   <div class="  col-12 col-sm-8 col-md-8 ">
-    <table class="table  ">
-      <legend>Danh sách khách hàng</legend>
-      <tr>
-        <td>STT</td>
-        <td>Name</td>
-        <td>Date Birth</td>
-        <td>Gender</td>
-        <td>Id Card</td>
-        <td>Phone</td>
-        <td>Email</td>
-        <td>Address</td>
-        <td>Customer Type</td>
-        <td>Edit</td>
-        <td>Delete</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+    <div class="event-schedule-area-two bg-color pad100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 ">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade active show" id="home" role="tabpanel">
+                <div class="table-responsive">
 
-        <td><select>
-          <option value="">--Chọn Loại--</option>
-          <option value="">Nam</option>
-          <option value="">Nữ</option>
-          <option value="">Khác</option>
-        </select></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editInfoModal">
-            Edit
-          </button>
-        </td>
-        <td>
-          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Delete
-          </button>
-        </td>
-      </tr>
-    </table>
-    <!--/*phân trang*/-->
-    <nav class="justify-content-center d-flex ">
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link" > Previous </a></li>
+                  <table class="table">
+                    <thead>
+                    <tr>
+                      <th scope="col">Customer</th>
+                      <th scope="col">Information</th>
+                      <th scope="col">Customer Type</th>
+                      <th class="text-center" scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
 
-        <li class="page-item active"><a class="page-link" ></a></li>
+                    <tr class="inner-box">
+                      <td>
+                        <div class="event-img">
+                          <img src="../../../assets/images/sonThieuNang.png" alt=""/>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="event-wrap">
+                          <h3><a href="#">Pham The Son</a></h3>
+                          <div class="meta">
+                            <div class="categories">
+                              <a href="#">Email: 12345678</a>
+                            </div>
+                            <div class="categories">
+                              <a href="#">Phone: 0987654321</a>
+                            </div>
+                          </div>
+                          <div class="meta">
+                            <div class="categories">
+                              <a href="#">Address: Cam Le,Da Nang</a>
+                            </div>
+                          </div>
+                        </div>
 
-        <li class="page-item"><a class="page-link" ></a></li>
+                      </td>
+                      <th>
+                        <div class="r-no">
+                          <span class="myFontSize">Thiểu năng số 2 không ai là số 1</span>
+                        </div>
+                      </th>
+                      <td>
+                        <div class="primary-btn">
+                          <a class="btn btn-primary" href="#">View</a>
+                        </div>
+                      </td>
+                    </tr>
 
-        <li class="page-item"><a class="page-link" >Next</a></li>
-      </ul>
-    </nav>
+                    <tr class="inner-box">
+                      <td>
+                        <div class="event-img">
+                          <img src="../../../assets/images/huyDN.png" alt=""/>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="event-wrap">
+                          <h3><a href="#">Trần Viết huy </a></h3>
+                          <div class="meta">
+                            <div class="categories">
+                              <a href="#">Email: 12345678</a>
+                            </div>
+                            <div class="categories">
+                              <a href="#">Phone: 0987654321</a>
+                            </div>
+                          </div>
+                          <div class="meta">
+                            <div class="categories">
+                              <a href="#">Address: Ngũ Hành Sơn, Đà Nẵng </a>
+                            </div>
+                          </div>
+                        </div>
+
+                      </td>
+                      <th>
+                        <div class="r-no">
+                          <span class="myFontSize">Làm Qick < 5</span>
+                        </div>
+                      </th>
+                      <td>
+                        <div class="primary-btn">
+                          <a class="btn btn-primary" href="#">View</a>
+                        </div>
+                      </td>
+                    </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/*phân trang*/-->
+        <nav class="justify-content-center d-flex mt-3 ">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link"> Previous </a></li>
+
+            <li class="page-item active"><a class="page-link"></a></li>
+
+            <li class="page-item"><a class="page-link"></a></li>
+
+            <li class="page-item"><a class="page-link">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </div>
 
   <div class="col-12 col-sm -4 col-md-2  px-0">
@@ -84,3 +146,5 @@
   </div>
 
 </div>
+
+

@@ -10,6 +10,8 @@ import { NavComponent } from './header_footer_nav/nav/nav.component';
 import { EditFacilityComponent } from './facility/edit-facility/edit-facility.component';
 import { CreateFacilityComponent } from './facility/create-facility/create-facility.component';
 import { ListCustomerComponent } from './customer/list-customer/list-customer.component';
+import { EditCustomerComponent } from './customer/edit-customer/edit-customer.component';
+import { CreateCustomerComponent } from './customer/create-customer/create-customer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ListCustomerComponent } from './customer/list-customer/list-customer.co
     NavComponent,
     EditFacilityComponent,
     CreateFacilityComponent,
-    ListCustomerComponent
+    ListCustomerComponent,
+    EditCustomerComponent,
+    CreateCustomerComponent
   ],
   imports: [
     BrowserModule
