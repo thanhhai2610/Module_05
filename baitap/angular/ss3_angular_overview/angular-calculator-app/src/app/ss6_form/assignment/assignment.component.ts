@@ -32,7 +32,6 @@ export class AssignmentComponent implements OnInit {
       name: ['Nguyen Thanh Hai',
         [Validators.required,
           Validators.minLength(5),
-          Validators.pattern("^(([\\p{Lu}][\\p{Ll}]{1,8})(\\s([\\p{Lu}]|[\\p{Lu}][\\p{Ll}]{1,10})){0,5})| *$")
         ]],
       point: [10,
         [Validators.required,
@@ -45,7 +44,7 @@ export class AssignmentComponent implements OnInit {
       password: ['',
         [Validators.required
         ]],
-      confirmPassword: ['']
+      confirmPassword: ''
 
     }, {validators: reConfirmPassword})
   }

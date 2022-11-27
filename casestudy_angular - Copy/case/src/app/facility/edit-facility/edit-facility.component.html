@@ -1,0 +1,111 @@
+
+
+
+<div class="row mx-0 position-relative section" >
+
+  <div class="col-12 col-sm -4 col-md-2  px-0">
+    <div class="list-group min-vh-100 navbar-nav-scroll " style="border: 2px solid #7952b3; height: 100%">
+      <button type="button" class="list-group-item list-group-item-action " aria-current="true">
+        The current button
+      </button>
+      <button type="button" class="list-group-item list-group-item-action">A second item</button>
+      <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+      <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+      <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item
+      </button>
+    </div>
+  </div>
+
+  <div class="  col-12 col-sm-8 col-md-8 ">
+    <div class="container-fluid table table-success table-striped">
+      <div class="row" style="width: 100%; padding: 0; margin: 0;">
+        <div id="content">
+          <form id="form" method="post" novalidate="novalidate">
+            <fieldset class="my-fieldset" >
+              <legend>Chỉnh sửa thông tin dịch vụ </legend>
+              <table class="table table-striped" style="text-align: left">
+                <input type="hidden"/>
+                <tr>
+                  <td class="my-td-form">Tên</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td  class="my-td-form">Loại dịch vụ</td>
+                  <td><select id="facilityTypeSelect" onchange="changeType(this.value)">
+                    <option value="">--Chọn Loại--</option>
+                    <option value="">Villa</option>
+                    <option value="">House</option>
+                    <option value="">Room</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td class="my-td-form">Diện tích</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td class="my-td-form">Giá</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td class="my-td-form">Số người tối đa</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td class="my-td-form">Kiểu thuê</td>
+                  <td>
+                    <select>
+                      <option value="">--Chọn Loại--</option>
+                      <option value="">Villa</option>
+                      <option value="">Villa</option>
+                      <option value="">Villa</option>
+                      <option value="">Villa</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr class="villa house">
+                  <td class="my-td-form">Tiêu chuẩn phòng</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr class="villa house">
+                  <td class="my-td-form">Mô tả</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr class="villa">
+                  <td class="my-td-form">Diện tích hồ bơi</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr class="villa house">
+                  <td class="my-td-form">Số tầng</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr class="room">
+                  <td class="my-td-form">Dịch vụ miễn phí</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr><td></td>
+                  <td>
+                    <button type="submit" class="btn btn-primary">Lưu thông tin</button>
+                  </td>
+                </tr>
+              </table>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm -4 col-md-2  px-0">
+    <div class="list-group min-vh-100 navbar-nav-scroll " style="border: 2px solid #7952b3; height: 100%">
+      <button type="button" class="list-group-item list-group-item-action " aria-current="true">
+        The current button
+      </button>
+      <button type="button" class="list-group-item list-group-item-action">A second item</button>
+      <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+      <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+      <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item
+      </button>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2f698d75-1541-42e4-904c-e7ff638f7689" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/demo_css.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/democss/indexcc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/democss/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story_short_menu/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story_short_menu/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story_short_menu/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story_short_menu/.idea/story_short_menu.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story_short_menu/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story_short_menu/content/tap_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story_short_menu/content/tap_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story_short_menu/content/tap_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story_short_menu/content/tap_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story_short_menu/story_short_menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/story_short_menu/story_short_menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/until/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap/hello/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../baitap/hello/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap/hello/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../baitap/hello/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap/hello/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../baitap/hello/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy_angular/case/src/app/customer/create-customer/create-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy_angular/case/src/app/customer/create-customer/create-customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy_angular/case/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy_angular/case/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/exercise/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/exercise/.idea/exercise.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/exercise/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/exercise/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/exercise/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/exercise/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/exercise/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/exercise/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/exercise/src/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/exercise/src/ss2_type_script/fibonacci.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/exercise/src/ss2_type_script/fibonacci.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/exercise/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/pratice/declare_and_use_variables/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/pratice/declare_and_use_variables/.idea/declare_and_use_variables.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/pratice/declare_and_use_variables/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/pratice/declare_and_use_variables/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/pratice/declare_and_use_variables/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/pratice/declare_and_use_variables/createFacility.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/pratice/declare_and_use_variables/editFacility.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/pratice/declare_and_use_variables/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/pratice/declare_and_use_variables/listFacility.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss2_type_script/pratice/declare_and_use_variables/tsconfig.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2I4GM9zAMxnVdgfoT64ZBFFV7ec" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="textmate" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Thanhhaicodegym\Module_05\demo_css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Thanhhaicodegym\Module_05\demo_css\democss" />
+      <recent name="C:\Thanhhaicodegym\Module_05\demo_css\until" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f698d75-1541-42e4-904c-e7ff638f7689" name="Default Changelist" comment="" />
+      <created>1669433391203</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669433391203</updated>
+      <workItem from="1669433392825" duration="4199000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="922" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1669433468899">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="922" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1669433468899" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1669438260463">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1669438260463" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1669438611039">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1669438611039" />
+  </component>
+</project>
