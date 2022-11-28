@@ -1,0 +1,180 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Sơn Thiểu Năng",
+      "price": 16,
+      "description": "Smith, Bruen and Ferry",
+      "category": {
+        "id": 1,
+        "name": "Smith"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Tabbi De Morena",
+      "price": 74,
+      "description": "Carroll Inc",
+      "category": {
+        "id": 2,
+        "name": "Carroll"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Allistir Geer",
+      "price": 24,
+      "description": "Sipes, Crona and Fahey",
+      "category": {
+        "id": 1,
+        "name": "Smith"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Carlota Strainge",
+      "price": 53,
+      "description": "Spencer Group",
+      "category": {
+        "id": 1,
+        "name": "Smith"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Cristie Argent",
+      "price": 81,
+      "description": "Daugherty-Kulas",
+      "category": {
+        "id": 1,
+        "name": "Smith"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Izak Ashlee",
+      "price": 34,
+      "description": "Turner-Green",
+      "category": {
+        "id": 1,
+        "name": "Smith"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Hertha Bristoe",
+      "price": 93,
+      "description": "Skiles-Hahn",
+      "category": {
+        "id": 2,
+        "name": "Carroll"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Hertha Fernan",
+      "price": 31,
+      "description": "Will-Koch",
+      "category": {
+        "id": 1,
+        "name": "Smith"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Gretal Heningham",
+      "price": 12,
+      "description": "Sauer-Kutch",
+      "category": {
+        "id": 2,
+        "name": "Carroll"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Davin Stapele",
+      "price": 40,
+      "description": "Dibbert and Sons",
+      "category": {
+        "id": 1,
+        "name": "Smith"
+      }
+    },
+    {
+      "id": 11,
+      "name": "ahah",
+      "price": 25,
+      "description": "fhdsfhdhh",
+      "category": 3
+    },
+    {
+      "id": 12,
+      "name": "131",
+      "price": 13153,
+      "description": "15353",
+      "category": 10
+    },
+    {
+      "id": 13,
+      "name": "23354",
+      "price": null,
+      "description": "34teger",
+      "category": 1
+    },
+    {
+      "id": 14,
+      "name": "aqety435yu",
+      "price": 13453,
+      "description": "yuktykf",
+      "category": {
+        "id": 2
+      }
+    },
+    {
+      "id": 15,
+      "name": "nhanhanha",
+      "price": 3251423121212,
+      "description": "asdfghjk",
+      "category": {
+        "id": 3,
+        "name": 3
+      }
+    },
+    {
+      "id": 16,
+      "name": "sdfgh",
+      "price": 3456,
+      "description": "wsedrfgthj",
+      "category": {
+        "id": "Carroll"
+      }
+    },
+    {
+      "id": 17,
+      "name": "d",
+      "price": 1,
+      "description": "fdssdf",
+      "category": {
+        "name": "Carroll"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Smith"
+    },
+    {
+      "id": 2,
+      "name": "Carroll"
+    },
+    {
+      "id": 3,
+      "name": "ngu"
+    },
+    {
+      "id": 4,
+      "name": "ngok"
+    }
+  ]
+}

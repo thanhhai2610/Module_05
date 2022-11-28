@@ -1,11 +1,11 @@
 import {Injectable} from '@angular/core';
-import {IProduct} from '../model/iproduct';
+import {Product} from "../product";
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
-  products: IProduct[] = [
+  products: Product[] = [
     {
       id: 1,
       name: 'Iphone 12',
@@ -31,28 +31,28 @@ export class ProductService {
   constructor() {
   }
 
-  getAll() {
+  getList() {
     return this.products;
   }
 
-  saveProduct(product: IProduct) {
+  save(product: Product) {
     this.products.push(product);
-  }
-
-  findById(id: number) {
-    for (let i = 0; i < this.products.length; i++) {
-      if (this.products[i].id == id) {
-        return this.products[i];
-      }
-    }
-    return undefined;
-  }
-
-  update(product: IProduct) {
-    this.products[product.id - 1] = product;
   }
 
   deleteProduct(index: number) {
     this.products.splice(index, 1);
+  }
+
+  update(product: Product) {
+    this.products[product.id - 1] = product;
+  }
+
+  findById(id: number) {
+    for (let i = 0; i < this.products.length; i++) {
+      if (this.products[i].id === id) {
+        return this.products[i];
+      }
+    }
+    return undefined;
   }
 }

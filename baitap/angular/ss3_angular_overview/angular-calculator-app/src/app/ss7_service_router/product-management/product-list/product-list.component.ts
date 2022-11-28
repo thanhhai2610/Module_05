@@ -20,6 +20,7 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {
     this.getAll(this.index);
   }
+
   getAll(index: number){
     this.index = this._activatedRoute.snapshot.params['index'];
     if(isNotNullOrUndefined(this.index)){
