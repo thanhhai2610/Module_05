@@ -34,45 +34,7 @@
                       <th class="text-center" scope="col">Action</th>
                     </tr>
                     </thead>
-                    <tbody>
-
-                    <tr class="inner-box">
-                      <td>
-                        <div class="event-img">
-                          <img src="../../../assets/images/sonThieuNang.png" alt=""/>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="event-wrap">
-                          <h3><a href="#">Pham The Son</a></h3>
-                          <div class="meta">
-                            <div class="categories">
-                              <a href="#">Email: 12345678</a>
-                            </div>
-                            <div class="categories">
-                              <a href="#">Phone: 0987654321</a>
-                            </div>
-                          </div>
-                          <div class="meta">
-                            <div class="categories">
-                              <a href="#">Address: Cam Le,Da Nang</a>
-                            </div>
-                          </div>
-                        </div>
-
-                      </td>
-                      <th>
-                        <div class="r-no">
-                          <span class="myFontSize">Thiểu năng số 2 không ai là số 1</span>
-                        </div>
-                      </th>
-                      <td>
-                        <div class="primary-btn">
-                          <a class="btn btn-primary" href="#">View</a>
-                        </div>
-                      </td>
-                    </tr>
-
+                    <tbody *ngFor="let data of customerList let i = index">
                     <tr class="inner-box">
                       <td>
                         <div class="event-img">
@@ -81,18 +43,18 @@
                       </td>
                       <td>
                         <div class="event-wrap">
-                          <h3><a href="#">Trần Viết huy </a></h3>
+                          <h3><a href="#"> {{data.name}} </a></h3>
                           <div class="meta">
                             <div class="categories">
-                              <a href="#">Email: 12345678</a>
+                              <a href="#">Email:  {{data.email}}</a>
                             </div>
                             <div class="categories">
-                              <a href="#">Phone: 0987654321</a>
+                              <a href="#">Phone:  {{data.phoneNumber}}</a>
                             </div>
                           </div>
                           <div class="meta">
                             <div class="categories">
-                              <a href="#">Address: Ngũ Hành Sơn, Đà Nẵng </a>
+                              <a href="#">Address:  {{data.address}} </a>
                             </div>
                           </div>
                         </div>
@@ -100,7 +62,7 @@
                       </td>
                       <th>
                         <div class="r-no">
-                          <span class="myFontSize">Làm Qick < 5</span>
+                          <span class="myFontSize"> {{data.customerType}}</span>
                         </div>
                       </th>
                       <td>
