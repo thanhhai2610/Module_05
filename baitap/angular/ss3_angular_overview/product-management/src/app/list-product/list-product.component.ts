@@ -13,7 +13,6 @@ export class ListProductComponent implements OnInit {
 
   products: Product[] = [];
 
-
   constructor(private productService: ProductServiceService,
               private router: Router) {
   }
@@ -26,12 +25,6 @@ export class ListProductComponent implements OnInit {
     this.productService.getList().subscribe(
       data => {
         this.products = data;
-      },
-      error => {
-        console.log('that bai');
-      },
-      () => {
-        console.log('Thanh cong');
       });
   }
 

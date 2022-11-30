@@ -6,8 +6,8 @@
       "price": 16,
       "description": "Smith, Bruen and Ferry",
       "category": {
-        "id": 1,
-        "name": "Smith"
+        "id": 3,
+        "name": "ngu"
       }
     },
     {
@@ -101,61 +101,23 @@
       }
     },
     {
-      "id": 11,
-      "name": "ahah",
-      "price": 25,
-      "description": "fhdsfhdhh",
-      "category": 3
-    },
-    {
-      "id": 12,
-      "name": "131",
-      "price": 13153,
-      "description": "15353",
-      "category": 10
-    },
-    {
-      "id": 13,
-      "name": "23354",
-      "price": null,
-      "description": "34teger",
-      "category": 1
-    },
-    {
-      "id": 14,
-      "name": "aqety435yu",
-      "price": 13453,
-      "description": "yuktykf",
-      "category": {
-        "id": 2
-      }
-    },
-    {
-      "id": 15,
-      "name": "nhanhanha",
-      "price": 3251423121212,
-      "description": "asdfghjk",
+      "id": 19,
+      "name": "zxcvbnm",
+      "price": 852,
+      "description": "qwertyuiop",
       "category": {
         "id": 3,
-        "name": 3
+        "name": "ngu"
       }
     },
     {
-      "id": 16,
-      "name": "sdfgh",
-      "price": 3456,
-      "description": "wsedrfgthj",
+      "id": 20,
+      "name": "asdfghjkl",
+      "price": 7987,
+      "description": "sdfghjk",
       "category": {
-        "id": "Carroll"
-      }
-    },
-    {
-      "id": 17,
-      "name": "d",
-      "price": 1,
-      "description": "fdssdf",
-      "category": {
-        "name": "Carroll"
+        "id": 4,
+        "name": "ngok"
       }
     }
   ],

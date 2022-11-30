@@ -1,0 +1,145 @@
+<div class="container">
+  <h1 class="mt-5 mb-5" routerLink="/">Danh sách</h1>
+  <a class="btn btn-warning" routerLink="/create">Create</a>
+
+  <div class="mt-2">
+    <input #nameSearch type="text" name="nameSearch" placeholder="Search name" style="margin-right: 10px">
+
+    <select #classroomSearch style="margin-right: 10px;height: 30px;width: 70px" name="classroomSearch">
+      <option value="" selected>Select</option>
+      <option *ngFor="let item of classroomList" value="{{item.name}}">{{item.name}}</option>
+    </select>
+
+    <input type="submit" value="Search" (click)="search(nameSearch.value, classroomSearch.value)">
+  </div>
+
+  <div class="mt-2">
+    <table class="table table-bordered table-primary table-striped">
+      <thead>
+      <tr>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Tuoi</th>
+        <th>Diem</th>
+        <th>Lop</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let x of students | paginate: {itemsPerPage:3,currentPage:p}; index as i">
+        <td>{{i + 1}}</td>
+        <td>{{x.name}}</td>
+        <td>{{x.age}}</td>
+        <td>{{x.point}}</td>
+        <td>{{x.classRoom.name}}</td>
+        <td>
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete"
+                  (click)="modalById(x.id)"> Delete
+          </button>
+          |
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalView"
+                  (click)="modalById(x.id)"> View
+          </button>
+          |
+          <button class="btn btn-warning" [routerLink]="['/edit',x.id]"> Edit</button>
+
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <div class="text-right">
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+
+  </div>
+
+</div>
+
+<!--Modal Xoa-->
+<div *ngIf="deleteStudent" class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="exampleModalLabel-delete"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel-delete">Xóa khách hàng</h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Bạn có muốn xóa khách hàng <strong style="color: red">{{deleteStudent.name}}</strong>?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+        <button class="btn btn-danger" data-bs-dismiss="modal" type="submit"
+                (click)="deleteStudentById(deleteStudent.id)">Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal View-->
+<div *ngIf="deleteStudent" class="modal fade" id="modalView" tabindex="-1" aria-labelledby="exampleModalLabel-view"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel-view">Thong tin</h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <fieldset>
+          <table style="width: 100%" >
+            <tr>
+              <td> Tên :</td>
+              <td>{{deleteStudent.name}}</td>
+            </tr>
+            <tr>
+              <td>Diem</td>
+              <td>{{deleteStudent.point}}</td>
+            </tr>
+            <tr>
+              <td>Tuoi</td>
+              <td>{{deleteStudent.age}}</td>
+            </tr>
+            <tr>
+              <td>Lop</td>
+              <td>{{deleteStudent.classRoom.name}}</td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal Thông báo thành công-->
+<div class="notify">
+  <div *ngIf="message">
+    <div aria-live="polite" aria-atomic="true" class="position-relative">
+      <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <svg class="bd-placeholder-img rounded me-2" width="20" height="20"
+               xmlns="http://www.w3.org/2000/svg"
+               aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#007aff"></rect>
+          </svg>
+          <strong class="me-auto"><span style="vertical-align: inherit;"><span
+            style="vertical-align: inherit;">Thông báo</span></span></strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Đóng"></button>
+        </div>
+        <div class="toast-body"><span style="vertical-align: inherit;"><span
+          style="vertical-align: inherit;">
+                   <strong> {{message}} </strong> </span></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+

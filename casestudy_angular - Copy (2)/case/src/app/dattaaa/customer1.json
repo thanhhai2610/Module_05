@@ -1,0 +1,50 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Sơn Thiểu Năng",
+      "dateOfBirth": 16,
+      "gender": "Smith, Bruen and Ferry",
+      "idCard": "Smith, Bruen and Ferry",
+      "phoneNumber": "Smith, Bruen and Ferry",
+      "email": "Smith, Bruen and Ferry",
+      "customerType": {
+        "id": 1,
+        "name": "Smith"
+      },
+      "address": "Smith, Bruen and Ferry"
+    },
+    {
+      "id": 1,
+      "name": "Sơn Thiểu Năng",
+      "dateOfBirth": 16,
+      "gender": "Smith, Bruen and Ferry",
+      "idCard": "Smith, Bruen and Ferry",
+      "phoneNumber": "Smith, Bruen and Ferry",
+      "email": "Smith, Bruen and Ferry",
+      "customerType": {
+        "id": 2,
+        "name": "Carroll"
+      },
+      "address": "Smith, Bruen and Ferry"
+    }
+  ],
+  "customerTypes": [
+    {
+      "id": 1,
+      "name": "Smith"
+    },
+    {
+      "id": 2,
+      "name": "Carroll"
+    },
+    {
+      "id": 3,
+      "name": "ngu"
+    },
+    {
+      "id": 4,
+      "name": "ngok"
+    }
+  ]
+}

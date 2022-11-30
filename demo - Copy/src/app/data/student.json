@@ -1,0 +1,74 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "name": "son thieu nang 1",
+      "point": 1,
+      "age": "ngok",
+      "classRoom": {
+        "id": 2,
+        "name": "ngu nhu bo"
+      }
+    },
+    {
+      "id": 2,
+      "name": "son thieu nang 2",
+      "point": 1,
+      "age": "ngok",
+      "classRoom": {
+        "id": 2,
+        "name": "ngu nhu bo"
+      }
+    },
+    {
+      "id": 3,
+      "name": "son thieu nang 3",
+      "point": 1,
+      "age": "ngok",
+      "classRoom": {
+        "id": 2,
+        "name": "ngu nhu bo"
+      }
+    },
+    {
+      "id": 4,
+      "name": "son thieu nang 4",
+      "point": 1,
+      "age": "ngok",
+      "classRoom": {
+        "id": 1,
+        "name": "ngu "
+      }
+    },
+    {
+      "id": 5,
+      "name": "son thieu nang 5",
+      "point": 1,
+      "age": "ngok",
+      "classRoom": {
+        "id": 2,
+        "name": "ngu nhu bo"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Sơn Thiểu Năng 6",
+      "point": -1,
+      "age": "ngốc ",
+      "classRoom": {
+        "id": 1,
+        "name": "ngu"
+      }
+    }
+  ],
+  "classrooms": [
+    {
+      "id": 1,
+      "name": "ngu"
+    },
+    {
+      "id": 2,
+      "name": "ngu nhu bo"
+    }
+  ]
+}

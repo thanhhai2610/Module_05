@@ -8,8 +8,8 @@ import {RouterModule} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import {CretaeProductComponent} from './cretae-product/cretae-product.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import { EditProductComponent } from './edit-product/edit-product.component';
-import { DeleteProductComponent } from './delete-product/delete-product.component';
+import {EditProductComponent } from './edit-product/edit-product.component';
+import {DeleteProductComponent} from './delete-product/delete-product.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,6 @@ import { DeleteProductComponent } from './delete-product/delete-product.componen
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule
   ],

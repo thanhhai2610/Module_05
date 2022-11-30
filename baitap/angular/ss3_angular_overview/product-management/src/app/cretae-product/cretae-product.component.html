@@ -17,7 +17,7 @@
       <td> Danh muc san pham</td>
       <td><select formControlName="category">
         <option value="" selected>Chọn Danh Mục</option>
-        <option *ngFor="let item of categoryList" [ngValue]="item.name">{{item.name}}</option>
+        <option *ngFor="let item of categoryList" [ngValue]="item">{{item.name}}</option>
       </select></td>
     </tr>
     <tr>

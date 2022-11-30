@@ -1,0 +1,84 @@
+{
+  "student": [
+    {
+      "id": 4,
+      "name": "son thieu nang 4",
+      "point": 1,
+      "age": "ngok",
+      "classRoom": {
+        "id": 1,
+        "name": "ngu "
+      }
+    },
+    {
+      "id": 5,
+      "name": "son thieu nang 5",
+      "point": 1,
+      "age": "ngok",
+      "classRoom": {
+        "id": 2,
+        "name": "ngu nhu bo"
+      }
+    },
+    {
+      "name": "Nguyen Thanh Hai",
+      "point": 10,
+      "age": " regaeg",
+      "classRoom": {
+        "id": 1,
+        "name": "ngu"
+      },
+      "id": 7
+    },
+    {
+      "name": "Sơn Thiểu Năng 9",
+      "point": "0",
+      "age": "bớt ngu rồi",
+      "classRoom": {
+        "id": 1,
+        "name": "ngu"
+      },
+      "id": 8
+    },
+    {
+      "name": "Le Huu Truong",
+      "point": "10",
+      "age": "35",
+      "classRoom": {
+        "id": 1,
+        "name": "ngu"
+      },
+      "id": 9
+    },
+    {
+      "name": "Sơn quá Thiểu năng",
+      "point": "0",
+      "age": "22",
+      "classRoom": {
+        "id": 2,
+        "name": "ngu nhu bo"
+      },
+      "id": 10
+    },
+    {
+      "name": "Uyên như qq",
+      "point": "10",
+      "age": "25",
+      "classRoom": {
+        "id": 1,
+        "name": "ngu"
+      },
+      "id": 11
+    }
+  ],
+  "classrooms": [
+    {
+      "id": 1,
+      "name": "ngu"
+    },
+    {
+      "id": 2,
+      "name": "ngu nhu bo"
+    }
+  ]
+}

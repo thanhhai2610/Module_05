@@ -10,7 +10,7 @@
         <th>Giá</th>
         <th>Mô tả</th>
         <th>Danh muc</th>
-        <th>Xóa</th>
+        <th></th>
       </tr>
       </thead>
       <tbody>
@@ -22,6 +22,8 @@
         <td>{{x.category.name}}</td>
         <td>
           <button [routerLink]="['/product/delete',x.id]"> Xóa</button>
+          |
+          <button [routerLink]="['/product/edit',x.id]"> Edit</button>
         </td>
       </tr>
       </tbody>

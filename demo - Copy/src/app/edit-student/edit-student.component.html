@@ -1,0 +1,36 @@
+<h1>Chinh sua phẩm mới</h1>
+<form [formGroup]="studentFormEdit" *ngIf="studentFormEdit" (ngSubmit)="submit()">
+  <table>
+    <tr>
+      <td>Id:</td>
+      <td><input type="number" formControlName="id"></td>
+    </tr>
+    <tr>
+      <td>Tên :</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>Điểm</td>
+      <td><input type="number" formControlName="point"></td>
+    </tr>
+    <tr>
+      <td>Tuổi</td>
+      <td><input type="text" formControlName="age"></td>
+    </tr>
+    <tr>
+      <td>Lớp</td>
+      <td>
+        <select formControlName="classRoom" [compareWith]="equals">
+          <option *ngFor="let item of classRoomList"
+                  [ngValue]="item">{{item.name}}</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button>Lưu</button>
+      </td>
+    </tr>
+  </table>
+</form>

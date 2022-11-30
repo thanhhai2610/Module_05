@@ -1,0 +1,47 @@
+<div class="container">
+  <h1 class="mt-5 mb-5">Danh sách sản phẩm</h1>
+  <a class="btn btn-warning" routerLink="/create">Create Product</a>
+
+  <div class="mt-2">
+    <input #nameSearch type="text" name="nameSearch" placeholder="Search name" style="margin-right: 10px">
+    <select #classroomSearch style="margin-right: 10px;height: 30px;width: 70px" name="classroomSearch">
+      <option value="" selected>Select</option>
+      <option *ngFor="let item of classroomList" value="{{item.name}}">{{item.name}}</option>
+    </select>
+    <input type="submit" value="Search" (click)="search(nameSearch.value, classroomSearch.value)">
+  </div>
+  
+  <div class="mt-2">
+    <table class="table table-bordered table-primary table-striped">
+      <thead>
+      <tr>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Tuoi</th>
+        <th>Diem</th>
+        <th>Lop</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let x of students | paginate: {itemsPerPage:3,currentPage:p}; index as i">
+        <td>{{i + 1}}</td>
+        <td>{{x.name}}</td>
+        <td>{{x.age}}</td>
+        <td>{{x.point}}</td>
+        <td>{{x.classRoom.name}}</td>
+        <td>
+          <button [routerLink]="['/delete',x.id]"> Xóa</button>
+          |
+          <button [routerLink]="['/edit',x.id]"> Edit</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <div class="text-right">
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+  </div>
+
+</div>
+

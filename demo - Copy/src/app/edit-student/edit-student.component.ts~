@@ -1,0 +1,64 @@
+import {Component, OnInit} from '@angular/core';
+import {Classroom} from "../model/classroom";
+import {FormControl, FormGroup} from "@angular/forms";
+import {StudentService} from "../service/student.service";
+import {ActivatedRoute, ParamMap, Router} from "@angular/router";
+
+@Component({
+  selector: 'app-edit-student',
+  templateUrl: './edit-student.component.html',
+  styleUrls: ['./edit-student.component.css']
+})
+export class EditStudentComponent implements OnInit {
+
+  classRoomList: Classroom[] = [];
+  id: number;
+  studentFormEdit: FormGroup = new FormGroup({
+    id: new FormControl(),
+    name: new FormControl(),
+    point: new FormControl(),
+    age: new FormControl(),
+    classRoom: new FormControl()
+  });
+
+  equals(o1: Classroom, o2: Classroom) {
+    return o1.id === o2.id;
+  }
+
+
+  constructor(private studentService: StudentService,
+              private activatedRoute: ActivatedRoute,
+              private router: Router) {
+    this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
+      this.id = +paramMap.get('id');
+      this.getById(this.id);
+    });
+  }
+
+  ngOnInit(): void {
+    this.studentService.findAllClassRoom().subscribe(data => {
+      this.classRoomList = data;
+    });
+  }
+
+  getById(id: number) {
+    return this.studentService.findById(id).subscribe(data => {
+      this.studentFormEdit = new FormGroup({
+          id: new FormControl(data.id),
+          name: new FormControl(data.name),
+          point: new FormControl(data.point),
+          age: new FormControl(data.age),
+          classRoom: new FormControl(data.classRoom)
+        }
+      );
+    });
+  }
+
+  submit() {
+    const product = this.studentFormEdit.value;
+    this.studentService.update(product.id, product).subscribe(data => {
+      this.router.navigate(['/product/list']);
+    });
+  }
+
+}

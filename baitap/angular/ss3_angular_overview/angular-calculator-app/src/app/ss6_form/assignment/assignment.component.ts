@@ -4,6 +4,7 @@ import {AbstractControl, FormBuilder, FormGroup, ValidationErrors, ValidatorFn, 
 
 // @ts-ignore
 export const reConfirmPassword: ValidatorFn = (control: AbstractControl): ValidationErrors | null => {
+
   const password = control.get('password');
   const confirmPassword = control.get('confirmPassword');
 

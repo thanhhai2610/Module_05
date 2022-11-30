@@ -32,10 +32,8 @@ export class CretaeProductComponent implements OnInit {
 
   submit() {
     const product = this.productForm.value;
-    product.category = {name: product.category};
     this.productService.save(product).subscribe(data => {
       this.productForm.reset();
     });
-
   }
 }

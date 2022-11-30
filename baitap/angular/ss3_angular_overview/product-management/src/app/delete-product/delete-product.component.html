@@ -1,7 +1,7 @@
 <h1>Xoá sản phẩm</h1>
 <form [formGroup]="productForm" *ngIf="productForm" (ngSubmit)="deleteProduct(id)">
   <table>
-    ><input type="number" hidden formControlName="name">
+    <input type="number" hidden formControlName="id">
     <tr>
       <td>Tên sản phẩm:</td>
       <td><input type="text" formControlName="name" readonly></td>

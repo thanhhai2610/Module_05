@@ -1,0 +1,120 @@
+<div class="container">
+  <h1>Tạo mới</h1>
+  <a class="btn btn-warning" routerLink="/">Danh sách</a>
+  <form class="row g-3 needs-validation" novalidate autocomplete="off"
+        [formGroup]="rfStudent" (ngSubmit)="submit()">
+
+    <div class="mb-3">
+      <label class="form-label">Ten</label>
+
+      <input type="text" class="form-control" required
+             formControlName="name"
+             [ngClass]="(rfStudent.controls['name'].touched) ?
+             (rfStudent.controls['name'].errors ? 'is-invalid' : 'is-valid') : '' "
+      />
+
+      <div class="invalid-feedback">
+        <div *ngIf="rfStudent.controls['name'].errors?.required
+        && (rfStudent.controls['name'].touched) ">
+          Đừng thiểu năng giống thằng Sơn, ahihih đồ ngốc!
+        </div>
+        <div *ngIf="rfStudent.controls['name'].hasError('minlength')
+        && (rfStudent.controls['name'].touched) ">
+          Please input min length > 5!
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Điểm</label>
+
+      <input type="text" class="form-control" required
+             formControlName="point"
+             [ngClass]="(rfStudent.controls['point'].touched) ?
+             (rfStudent.controls['point'].errors ? 'is-invalid' : 'is-valid') : '' "
+      />
+
+      <div class="invalid-feedback">
+        <div *ngIf="rfStudent.controls['point'].errors?.required
+        && (rfStudent.controls['point'].touched) ">
+          Đừng thiểu năng giống thằng Sơn, ahihih đồ ngốc!
+        </div>
+        <div *ngIf="rfStudent.controls['point'].hasError('minlength')
+        && (rfStudent.controls['point'].touched) ">
+          Please input min length > 5!
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Tuổi</label>
+
+      <input type="text" class="form-control" required
+             formControlName="age"
+             [ngClass]="(rfStudent.controls['age'].touched) ?
+             (rfStudent.controls['age'].errors ? 'is-invalid' : 'is-valid') : '' "
+      />
+
+      <div class="invalid-feedback">
+        <div *ngIf="rfStudent.controls['age'].hasError('required')
+        && (rfStudent.controls['age'].touched) ">
+          Đừng thiểu năng giống thằng Sơn, ahihih đồ ngốc!
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Lớp</label>
+
+      <select class="form-control" required
+              formControlName="classRoom"
+              [ngClass]="(rfStudent.controls['classRoom'].touched) ?
+             (rfStudent.controls['classRoom'].errors ? 'is-invalid' : 'is-valid') : '' ">
+        <option value="" selected>Chọn Lớp</option>
+        <option *ngFor="let item of classRoom" [ngValue]="item">{{item.name}}</option>
+      </select>
+
+      <div class="invalid-feedback">
+        <div *ngIf="rfStudent.controls['classRoom'].hasError('required')
+        && (rfStudent.controls['classRoom'].touched) ">
+          Đừng thiểu năng giống thằng Sơn, ahihih đồ ngốc!
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <button class="btn btn-primary" type="submit"
+              [disabled]="!rfStudent.valid"
+      >Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+<!--    <table>-->
+<!--      <tr>-->
+<!--        <td>Tên:</td>-->
+<!--        <td><input type="number" formControlName="name"></td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td>Giá sản phẩm</td>-->
+<!--        <td><input type="number" formControlName="point"></td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td>Mô tả về sản phẩm</td>-->
+<!--        <td><input type="text" formControlName="age"></td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td> Danh muc san pham</td>-->
+<!--        <td><select formControlName="classRoom">-->
+<!--          <option value="" selected>Chọn Danh Mục</option>-->
+<!--          <option *ngFor="let item of classRoom" [ngValue]="item">{{item.name}}</option>-->
+<!--        </select></td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td></td>-->
+<!--        <td>-->
+<!--          <button>Tạo mới</button>-->
+<!--        </td>-->
+<!--      </tr>-->
+<!--    </table>-->
